@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,14 +17,61 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family:"burtons";
+  src: url("../public/Burtons.otf");
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/*@media (prefers-color-scheme: dark) {*/
+/*  html {*/
+/*    color-scheme: dark;*/
+/*  }*/
+/*  body {*/
+/*    color: white;*/
+/*    background: black;*/
+/*  }*/
+/*}*/
+.item__link {
+  background: rgba(0,0,0,0.4);
+  font-weight: 600;
+  font-size: 20px;
+}
+.item__link span {
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  height: 70px;
+  text-transform: uppercase;
+}
+.text-services {
+  max-width: 500px;
+  width: 100%;
+}
+.underline-text {
+  color: #61dafb;
+}
+.line-lang {
+  width: 1px;
+  height: 20px;
+  background: rgba(0,0,0,0.11);
+  margin: 0 2px;
+  display: none;
+}
+.lang-box span {
+  height: 100%;
+  padding: 10px 15px;
+  user-select: none;
+  transition: all .3s ease-in-out;
+}
+.lang-box .span--active {
+  background: #282c34;
 }
