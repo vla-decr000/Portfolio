@@ -7,7 +7,7 @@ import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
 import web1 from '../public/web-1.png';
-import web2 from '../public/pomado.jpg';
+import web2 from '../public/pomado.png';
 import web3 from '../public/web-3.png';
 import web4 from '../public/web-4.png';
 import web5 from '../public/web-5.png'
