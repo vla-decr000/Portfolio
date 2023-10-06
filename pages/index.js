@@ -84,8 +84,8 @@ export default function Home() {
                             <h3 className={'text-lg font-medium pt-8 pb-2'}>Веб-розробка</h3>
                             <p className={'py-2 px-3.5'}>Створення сайтів швидко і достатньо дешево !</p>
                             <h4 className={'py-4 text-teal-600'}>Прилади  , які я використовую</h4>
-                            <p className={'text-gray-800 py-1'}>HTML , CSS , JS (jquery)</p>
-                            <p className={'text-gray-800 py-1'}>PhP</p>
+                            <p className={'text-gray-800 py-1'}>HTML , CSS , JS, Jquery</p>
+                            <p className={'text-gray-800 py-1'}>PHP, Laravel</p>
                             <p className={'text-gray-800 py-1'}>React Ts  , Next Ts</p>
                         </div> :  <div className={'text-center shadow-lg px-0 py-10 rounded-xl my-10 basis-1/3  dark:bg-white  ,' +
                             ' text-black'}>
@@ -93,8 +93,8 @@ export default function Home() {
                             <h3 className={'text-lg font-medium pt-8 pb-2'}>Web Development</h3>
                             <p className={'py-2 px-3.5'}>Create website very fast and enough cheap !</p>
                             <h4 className={'py-4 text-teal-600'}>Web development tools i use</h4>
-                            <p className={'text-gray-800 py-1'}>HTML , CSS , JS (jquery)</p>
-                            <p className={'text-gray-800 py-1'}>PhP</p>
+                            <p className={'text-gray-800 py-1'}>HTML , CSS , JS, Jquery</p>
+                            <p className={'text-gray-800 py-1'}>PHP, Laravel</p>
                             <p className={'text-gray-800 py-1'}>React Ts  , Next Ts</p>
                         </div>}
                         {langState ?  <div className={'text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 dark:bg-white , text-black'}>
