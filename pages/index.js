@@ -155,15 +155,35 @@ export default function Home() {
                             </a> : ''}
                             <div><Image alt={'img'} src={web2} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
-                     <div className={'web__item  basis-1/3 shadow-lg flex-1 relative'} onMouseOver={() => setHoverState3(true)} onMouseOut={() => setHoverState3(false)}>
-                            {hoverState3 ?  
+                        <div className={'web__item basis-1/3 shadow-lg  flex-1  relative'} onMouseOver={() => setHoverState4(true)} onMouseOut={() => setHoverState4(false)}>
+                            {hoverState4 ?  
                              <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
-                                ' items-center'} href="https://wizard-avtocolor.com" target="_blank">
-                            <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch' +
-                                ' this'}</span>
+                                ' items-center'} href={'https://www.intelligent-finance.org/'} target={'_blank'} rel={'noreferrer'} >
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
                             </a> : ''}
-                            <div><Image alt={'img'} src={web3} className={'min-h-20 rounded-t-lg object-cover '} width={'100%'} height={'100%'}   /></div>
+                            <div>
+                                <Image alt={'img'} src={web4} className={'rounded-t-lg object-cover '} width={'100%'} height={'100%'}   /></div>
+                        </div>
+ 
+                        <div className={'web__item  basis-1/3 shadow-lg flex-1 relative'} onMouseOver={() => setHoverState3(true)} onMouseOut={() => setHoverState3(false)}>
+                                {hoverState3 ?  
+                                <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
+                                    ' justify-center' +
+                                    ' items-center'} href="https://wizard-avtocolor.com" target="_blank">
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch' +
+                                    ' this'}</span>
+                                </a> : ''}
+                                <div><Image alt={'img'} src={web3} className={'min-h-20 rounded-t-lg object-cover '} width={'100%'} height={'100%'}   /></div>
+                            </div>
+                            <div className={'web__item basis-1/3 shadow-lg  flex-1  relative'} onMouseOver={() => setHoverState5(true)} onMouseOut={() => setHoverState5(false)}>
+                            {hoverState5 ?   <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://deliever.vercel.app/'} target={'_blank'} rel={'noreferrer'} >
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div>
+                                <Image alt={'img'} src={web5} className={'rounded-t-lg object-cover'} width={'100%'} height={'100%'}   /></div>
                         </div>
                         
                         <div className={'web__item  basis-1/3 shadow-lg flex-1 relative' } onMouseOver={() => setHoverState(true)} onMouseOut={() => setHoverState(false)}>
@@ -175,26 +195,9 @@ export default function Home() {
                         </div>
                        
                        
-                        <div className={'web__item basis-1/3 shadow-lg  flex-1  relative'} onMouseOver={() => setHoverState4(true)} onMouseOut={() => setHoverState4(false)}>
-                            {hoverState4 ?  
-                             <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
-                                ' justify-center' +
-                                ' items-center'} href={'https://vla-decr000.github.io/Vervla/'} target={'_blank'} rel={'noreferrer'} >
-                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
-                            </a> : ''}
-                            <div>
-                                <Image alt={'img'} src={web4} className={'rounded-t-lg object-cover '} width={'100%'} height={'100%'}   /></div>
-                        </div>
-                        <div className={'web__item basis-1/3 shadow-lg  flex-1  relative'} onMouseOver={() => setHoverState5(true)} onMouseOut={() => setHoverState5(false)}>
-                            {hoverState5 ?   <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
-                                ' justify-center' +
-                                ' items-center'} href={'https://deliever.vercel.app/'} target={'_blank'} rel={'noreferrer'} >
-                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
-                            </a> : ''}
-                            <div>
-                                <Image alt={'img'} src={web5} className={'rounded-t-lg object-cover'} width={'100%'} height={'100%'}   /></div>
-                        </div>
-                    </div>
+                      
+                      
+                                            </div>
                 </section>
             </main>
             <footer className={'footer   bg-gray-900 text-teal-400 flex items-center justify-center shadow-2xl' +
