@@ -11,6 +11,7 @@ import web2 from '../public/pomado.png';
 import web3 from '../public/web-3.png';
 import web4 from '../public/web-4.png';
 import web5 from '../public/web-5.png'
+import majorik from '../public/majoirk.png';
 import { useState } from 'react';
 export default function Home() {
     const [darkMode , setDarkMode] = useState(false);
@@ -147,6 +148,17 @@ export default function Home() {
                             </p>}
                     </div>
                      <div className={'flex  flex-col  gap-10 py-10 lg:flex-row lg:flex-wrap justify-center'} >
+
+          <div className={'web__item  basis-1/3 shadow-lg flex-1 dark:bg-white relative '}onMouseOver={() => setHoverState2(true)} onMouseOut={() => setHoverState2(false)}>
+                            {hoverState2 ?   <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://majorik.com'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div><Image alt={'img'} src={majorik} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                        </div>
+
+                                                                            
                      <div className={'web__item  basis-1/3 shadow-lg flex-1 dark:bg-white relative '}onMouseOver={() => setHoverState2(true)} onMouseOut={() => setHoverState2(false)}>
                             {hoverState2 ?   <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
