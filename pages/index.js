@@ -168,16 +168,7 @@ export default function Home() {
                             </a> : ''}
                             <div><Image alt={'img'} src={web2} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
-                        <div className={'web__item basis-1/3 shadow-lg  flex-1  relative'} onMouseOver={() => setHoverState4(true)} onMouseOut={() => setHoverState4(false)}>
-                            {hoverState4 ?  
-                             <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
-                                ' justify-center' +
-                                ' items-center'} href={'https://www.intelligent-finance.org/'} target={'_blank'} rel={'noreferrer'} >
-                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
-                            </a> : ''}
-                            <div>
-                                <Image alt={'img'} src={web4} className={'rounded-t-lg object-cover '} width={'100%'} height={'100%'}   /></div>
-                        </div>
+                 
  
                    
                        
