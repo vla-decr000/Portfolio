@@ -150,8 +150,8 @@ export default function Home() {
                     </div>
                      <div className={'flex  flex-col  gap-10 py-10 lg:flex-row lg:flex-wrap justify-center'} >
 
-          <div className={'web__item  basis-1/3 shadow-lg flex-1 dark:bg-white relative '}onMouseOver={() => setMajorikHoverState(true)} onMouseOut={() => setMajorikHoverState(false)}>
-                            {majorikHoverState ?   <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
+          <div className={'web__item rounded-lg basis-1/3 shadow-lg flex-1 bg-transparent relative '}onMouseOver={() => setMajorikHoverState(true)} onMouseOut={() => setMajorikHoverState(false)}>
+                            {majorikHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
                                 ' items-center'} href={'https://majorik.com'} target={'_blank'} rel={'noreferrer'}>
                                 <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
@@ -160,8 +160,8 @@ export default function Home() {
                         </div>
 
                                                                             
-                     <div className={'web__item  basis-1/3 shadow-lg flex-1 dark:bg-white relative '}onMouseOver={() => setHoverState2(true)} onMouseOut={() => setHoverState2(false)}>
-                            {hoverState2 ?   <a className={'item__link  inset-0 absolute  z-100 text-white flex' +
+                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setHoverState2(true)} onMouseOut={() => setHoverState2(false)}>
+                            {hoverState2 ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
                                 ' items-center'} href={'https://pomado.com.ua/'} target={'_blank'} rel={'noreferrer'}>
                                 <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
