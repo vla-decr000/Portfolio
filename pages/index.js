@@ -11,7 +11,7 @@ import web2 from '../public/pomado.png';
 import web3 from '../public/web-3.png';
 import web4 from '../public/web-4.png';
 import web5 from '../public/web-5.png'
-import implantolog from "../public/implantolognew.png";
+import implantolog from "../public/impantolognew.png";
 import majorik from '../public/majorik.png';
 import { useState } from 'react';
 export default function Home() {
