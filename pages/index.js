@@ -171,7 +171,7 @@ export default function Home() {
                         </div>
                                                                                              
                      <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setHoverState3(true)} onMouseOut={() => setHoverState3(false)}>
-                            {hoverState2 ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                            {hoverState3 ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
                                 ' items-center'} href={'https://implantolog.com.ua/'} target={'_blank'} rel={'noreferrer'}>
                                 <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
