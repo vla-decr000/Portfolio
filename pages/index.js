@@ -88,8 +88,8 @@ export default function Home() {
                             <p className={'py-2 px-3.5'}>Створення сайтів швидко і достатньо дешево !</p>
                             <h4 className={'py-4 text-teal-600'}>Прилади  , які я використовую</h4>
                             <p className={'text-gray-800 py-1'}>HTML , CSS , JS, Jquery</p>
-                            <p className={'text-gray-800 py-1'}>PHP, Laravel</p>
-                            <p className={'text-gray-800 py-1'}>React Ts  , Next Ts</p>
+                            <p className={'text-gray-800 py-1'}>PHP, Laravel, Wordpress</p>
+                            <p className={'text-gray-800 py-1'}>Inertia Js, Vue 3</p>
                         </div> :  <div className={'text-center shadow-lg px-0 py-10 rounded-xl my-10 basis-1/3  dark:bg-white  ,' +
                             ' text-black'}>
                             <Image alt={'img'} src={code}  width={100} height={100} className={'mx-auto'} />
@@ -97,8 +97,8 @@ export default function Home() {
                             <p className={'py-2 px-3.5'}>Create website very fast and enough cheap !</p>
                             <h4 className={'py-4 text-teal-600'}>Web development tools i use</h4>
                             <p className={'text-gray-800 py-1'}>HTML , CSS , JS, Jquery</p>
-                            <p className={'text-gray-800 py-1'}>PHP, Laravel</p>
-                            <p className={'text-gray-800 py-1'}>React Ts  , Next Ts</p>
+                            <p className={'text-gray-800 py-1'}>PHP, Laravel, Wordpress</p>
+                            <p className={'text-gray-800 py-1'}>Inertia Js, Vue 3</p>
                         </div>}
                         {langState ?  <div className={'text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 dark:bg-white , text-black'}>
                             <Image alt={'img'} src={design}  width={100} height={100} className={'mx-auto'} />
