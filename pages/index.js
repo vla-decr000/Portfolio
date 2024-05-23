@@ -6,12 +6,13 @@ import vladmult from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
+import avatar from "../public/avatar.jpg";
 import web1 from '../public/web-1.png';
 import web2 from '../public/pomado.png';
 import web3 from '../public/web-3.png';
 import web4 from '../public/web-4.png';
 import web5 from '../public/web-5.png'
-import implantolog from "../public/impantolognew.png";
+import implantolog from "../public/implantolog.png";
 import majorik from '../public/majorik.png';
 import { useState } from 'react';
 export default function Home() {
@@ -62,7 +63,7 @@ export default function Home() {
                     <div className={'relative bg-gradient-to-b  from-teal-500 overflow-hidden rounded-full ' +
                         ' justify-center w-80 h-80 flex' +
                         ' items-center mx-auto my-14'} style={{'maxWidth': '-webkit-fill-available'}}>
-                        <Image alt={'img'} src={vladmult} layout={'fill'} objectFit={'cover'}/>
+                        <Image alt={'img'} src={avatar} layout={'fill'} objectFit={'cover'}/>
                     </div>
                 </section>
 
@@ -160,15 +161,7 @@ export default function Home() {
                             <div><Image alt={'img'} src={majorik} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
 
-                                                                            
-                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setHoverState2(true)} onMouseOut={() => setHoverState2(false)}>
-                            {hoverState2 ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
-                                ' justify-center' +
-                                ' items-center'} href={'https://pomado.com.ua/'} target={'_blank'} rel={'noreferrer'}>
-                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
-                            </a> : ''}
-                            <div><Image alt={'img'} src={web2} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
-                        </div>
+              
                                                                                              
                      <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setHoverState3(true)} onMouseOut={() => setHoverState3(false)}>
                             {hoverState3 ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
@@ -178,6 +171,16 @@ export default function Home() {
                             </a> : ''}
                             <div><Image alt={'img'} src={implantolog} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
+
+                                                                                      
+                     {/* <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setHoverState2(true)} onMouseOut={() => setHoverState2(false)}>
+                            {hoverState2 ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://pomado.com.ua/'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div><Image alt={'img'} src={web2} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                        </div> */}
                  
  
                    
