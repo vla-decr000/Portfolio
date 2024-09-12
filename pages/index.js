@@ -7,8 +7,12 @@ import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
 import avatar from "../public/avatar.jpg";
+import avatar2 from "../public/avatar2.jpg";
 
+import annabotyk from '../public/annabotyk.png';
 import implantolog from "../public/implantolog.png";
+import milano from "../public/milano.png";
+import exotic_vape from "../public/exotic_vape.png";
 import majorik from '../public/majorik.png';
 import big_femily from '../public/big_femily.png';
 import este_solution from '../public/este_solution.png';
@@ -32,6 +36,9 @@ export default function Home() {
     const [esteSolutionHoverState, setEsteSolutionHoverState] = useState(false);
     const [hairtalkHoverState, setHairtalkHoverState] = useState(false);
     const [energyTimeHoverState, setEnergyTimeHoverState] = useState(false);
+    const [milanoHoverState, setMilanoHoverState] = useState(false);
+    const [exoticVapeHoverState, setExoticVapeHoverState] = useState(false);
+    const [annaBotykHoverState, setAnnaBotykHoverState] = useState(false);
 
     const [langState , setLangState] = useState(true);
 
@@ -74,7 +81,7 @@ export default function Home() {
                     <div className={'relative bg-gradient-to-b  from-teal-500 overflow-hidden rounded-full ' +
                         ' justify-center w-80 h-80 flex' +
                         ' items-center mx-auto my-14'} style={{'maxWidth': '-webkit-fill-available'}}>
-                        <Image alt={'img'} src={avatar} layout={'fill'} objectFit={'cover'}/>
+                        <Image alt={'img'} src={avatar2} layout={'fill'} objectFit={'cover'}/>
                     </div>
                 </section>
 
@@ -181,6 +188,14 @@ export default function Home() {
 
               
                                                                                              
+                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setMilanoHoverState(true)} onMouseOut={() => setMilanoHoverState(false)}>
+                            {milanoHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://milano-group.shop/'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div><Image alt={'img'} src={milano} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                        </div>
                      <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setImplantologHoverState(true)} onMouseOut={() => setImplantologHoverState(false)}>
                             {implantologHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
@@ -188,6 +203,22 @@ export default function Home() {
                                 <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
                             </a> : ''}
                             <div><Image alt={'img'} src={implantolog} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                        </div>
+                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setExoticVapeHoverState(true)} onMouseOut={() => setExoticVapeHoverState(false)}>
+                            {exoticVapeHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://www.exotic-vape.com.ua/'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div><Image alt={'img'} src={exotic_vape} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                        </div>
+                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setAnnaBotykHoverState(true)} onMouseOut={() => setAnnaBotykHoverState(false)}>
+                            {annaBotykHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://www.annabotyk.com/'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div><Image alt={'img'} src={annabotyk} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
                      <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setBigFemilyHoverState(true)} onMouseOut={() => setBigFemilyHoverState(false)}>
                             {bigFemilyHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +

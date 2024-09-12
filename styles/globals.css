@@ -11,7 +11,7 @@ body {
 }
 .web__item {
   background: transparent;
-  height: fit-content !important;
+
 }
 .web__item:nth-child(5) {
   max-width: 50%;
