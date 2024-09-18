@@ -62,8 +62,8 @@ export default function Home() {
                             <li><div className={'lang-box hover:shadow-2xl  bg-gradient-to-r from-cyan-500 to-teal-500' +
                                 ' text-white' +
                                 ' rounded-md' +
-                                ' ml-8 dark:hover:shadow-black  dark:shadow-xl flex items-center flex-row-reverse'}><span className={!langState ? 'cursor-pointer' : 'cursor-pointer span--active'} onClick={() => setLangState(false)}>En</span>
-                                <div className={'line-lang'}></div> <span className={!langState ? 'cursor-pointer span--active' : 'cursor-pointer'}  onClick={() => setLangState(true)}>Ua</span></div></li>
+                                ' ml-8 dark:hover:shadow-black  dark:shadow-xl flex items-center flex-row-reverse'}><span className={!langState ? 'cursor-pointer rounded-md' : 'cursor-pointer span--active rounded-md'} onClick={() => setLangState(false)}>En</span>
+                                <div className={'line-lang'}></div> <span className={ !langState ? 'cursor-pointer span--active rounded-md' : 'cursor-pointer rounded-md'}  onClick={() => setLangState(true)}>Ua</span></div></li>
                         </ul>
                     </nav>
                     <div className={'text-center p-0 lg:p-15 md:p-10 sm:p-10'}>
