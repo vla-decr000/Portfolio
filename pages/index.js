@@ -23,6 +23,7 @@ import carprotection from '../public/carprotection.png';
 import wizardavtocolor from '../public/wizardavtocolor.png';
 import hairtalk from '../public/hair.png';
 import energytime from '../public/energytime.png';
+import salesmarketing from '../public/sales-marketing.com.ua.png';
 import {  useState } from 'react';
 
 
@@ -39,6 +40,7 @@ export default function Home() {
     const [milanoHoverState, setMilanoHoverState] = useState(false);
     const [exoticVapeHoverState, setExoticVapeHoverState] = useState(false);
     const [annaBotykHoverState, setAnnaBotykHoverState] = useState(false);
+    const [salesMarketingHoverState, setsalesMarketingkHoverState] = useState(false);
 
     const [langState , setLangState] = useState(true);
 
@@ -185,6 +187,14 @@ export default function Home() {
                             </a> : ''}
                             <div><Image alt={'img'} src={majorik} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
+          <div className={'web__item rounded-lg basis-1/3 shadow-lg flex-1 bg-transparent relative '}onMouseOver={() => setsalesMarketingkHoverState(true)} onMouseOut={() => setsalesMarketingkHoverState(false)}>
+                            {salesMarketingHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://sales-marketing.com.ua'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div className={'h-full'}><Image alt={'img'} src={salesmarketing} className={' rounded-t-lg object-cover h-full '} width={'100%'} height={'100%'}  /> </div>
+                        </div>
 
               
                                                                                              
@@ -204,14 +214,7 @@ export default function Home() {
                             </a> : ''}
                             <div><Image alt={'img'} src={implantolog} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
-                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setExoticVapeHoverState(true)} onMouseOut={() => setExoticVapeHoverState(false)}>
-                            {exoticVapeHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
-                                ' justify-center' +
-                                ' items-center'} href={'https://www.exotic-vape.com.ua/'} target={'_blank'} rel={'noreferrer'}>
-                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
-                            </a> : ''}
-                            <div><Image alt={'img'} src={exotic_vape} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
-                        </div>
+      
                      <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setAnnaBotykHoverState(true)} onMouseOut={() => setAnnaBotykHoverState(false)}>
                             {annaBotykHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
                                 ' justify-center' +
@@ -245,14 +248,7 @@ export default function Home() {
                             <div><Image alt={'img'} src={hairtalk} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
                         
-                     <div className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}onMouseOver={() => setEnergyTimeHoverState(true)} onMouseOut={() => setEnergyTimeHoverState(false)}>
-                            {energyTimeHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
-                                ' justify-center' +
-                                ' items-center'} href={'https://www.energytime.website/'} target={'_blank'} rel={'noreferrer'}>
-                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
-                            </a> : ''}
-                            <div><Image alt={'img'} src={energytime} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
-                        </div>
+             
                         
                                 
 
@@ -275,6 +271,10 @@ export default function Home() {
                                                 <div><Image alt={'img'} src={pomado} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                                             </article>
                                             <article className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}>
+                                                <div><Image alt={'img'} src={exotic_vape} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                                            </article>
+                                            
+                                            <article className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}>
                                                 <div><Image alt={'img'} src={daschool} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                                             </article>
                                             <article className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}>
@@ -285,6 +285,9 @@ export default function Home() {
                                             </article>
                                             <article className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}>
                                                 <div><Image alt={'img'} src={wizardavtocolor} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                                            </article>
+                                            <article className={'web__item  basis-1/3 shadow-lg flex-1 bg-transparent relative rounded-lg '}>
+                                                <div><Image alt={'img'} src={energytime} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                                             </article>
                                                 
                                             </div>       
