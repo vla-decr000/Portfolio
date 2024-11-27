@@ -10,6 +10,7 @@ import avatar from "../public/avatar.jpg";
 import avatar2 from "../public/avatar2.jpg";
 
 import annabotyk from '../public/annabotyk.png';
+import bitnews from '../public/bitnews.png';
 import implantolog from "../public/implantolog.png";
 import milano from "../public/milano.png";
 import exotic_vape from "../public/exotic_vape.png";
@@ -41,7 +42,7 @@ export default function Home() {
     const [exoticVapeHoverState, setExoticVapeHoverState] = useState(false);
     const [annaBotykHoverState, setAnnaBotykHoverState] = useState(false);
     const [salesMarketingHoverState, setsalesMarketingkHoverState] = useState(false);
-
+    const [bitNewsHoverState, setBitNewsHoverState] = useState(false);
     const [langState , setLangState] = useState(true);
 
     /* eslint-disable */
@@ -186,6 +187,14 @@ export default function Home() {
                                 <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
                             </a> : ''}
                             <div><Image alt={'img'} src={majorik} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
+                        </div>
+          <div className={'web__item rounded-lg basis-1/3 shadow-lg flex-1 bg-transparent relative '}onMouseOver={() => setBitNewsHoverState(true)} onMouseOut={() => setBitNewsHoverState(false)}>
+                            {bitNewsHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
+                                ' justify-center' +
+                                ' items-center'} href={'https://bitnews24.com'} target={'_blank'} rel={'noreferrer'}>
+                                <span className={' bg-gradient-to-r from-cyan-500 to-teal-500 '}>{langState ? 'Переглянути':'Watch this'}</span>
+                            </a> : ''}
+                            <div><Image alt={'img'} src={bitnews} className={' rounded-t-lg object-cover '} width={'100%'} height={'100%'}  /> </div>
                         </div>
           <div className={'web__item rounded-lg basis-1/3 shadow-lg flex-1 bg-transparent relative '}onMouseOver={() => setsalesMarketingkHoverState(true)} onMouseOut={() => setsalesMarketingkHoverState(false)}>
                             {salesMarketingHoverState ?   <a className={'item__link rounded-lg  inset-0 absolute  z-100 text-white flex' +
